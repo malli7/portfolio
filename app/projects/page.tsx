@@ -26,8 +26,8 @@ const page = async () => {
         Checkout what projects I have created
       </p>
       <div className="py-12 grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-6 lg:gap-12">
-        {data.map((item) => (
-          <div className="group block">
+        {data.map((item,index) => (
+          <div className="group block" key={index}>
             <div className="aspect-w-16 aspect-h-12 overflow-hidden rounded-2xl relative">
               <Image
                 src={item.imageUrl}
