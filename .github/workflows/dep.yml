@@ -28,14 +28,4 @@ jobs:
     - name: Verify Pushed Image
       run: docker pull malli7/portfolio:latest
 
-    - name: Deploy to EC2
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.SSH_HOST }}
-        username: ${{ secrets.SSH_USERNAME }}
-        key: ${{ secrets.SSH_KEY }}
-        script: |
-          sudo docker pull malli7/portfolio:latest
-          sudo docker stop portfolio || true
-          sudo docker rm portfolio || true
-          sudo docker run -d --name portfolio -p 3005:3000 malli7/portfolio:latest
+   
