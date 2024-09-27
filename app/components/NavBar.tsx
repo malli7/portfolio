@@ -56,7 +56,7 @@ const NavBar = () => {
 
       <div className="col-span-6 flex md:col-span-3 items-center justify-end">
         <Button className="hidden sm:flex" asChild>
-          <Link href="https://drive.google.com/file/d/1_AP57glEXqz7XyMi4Q09FzHgU5KVlvaW/view?usp=sharing">
+          <Link href="https://drive.google.com/file/d/11oUEMua6eIbFjduHp4drxS_xA63Ci3lD/view?usp=sharing">
             Resume
           </Link>
         </Button>
